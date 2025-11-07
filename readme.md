@@ -5,8 +5,6 @@ It explores a hybrid model between **interpreted execution** and **dynamic code 
 
 The project serves as a playground for studying **lexing**, **parsing**, **AST evaluation**, and **runtime code emission** using the .NET compiler platform.
 
----
-
 ## Interpreter Core
 
 At its heart, the AOT Script Engine defines a simple expression language that supports:
@@ -69,8 +67,6 @@ Output:
 25
 ```
 
----
-
 ## Ahead-of-Time Code Generation (Experimental)
 
 The experimental `CodeGenerator` explores compiling the parsed AST into **real C# code** and executing it via Roslyn at runtime.
@@ -105,8 +101,6 @@ public static class ScriptProgram {
 
 This allows the same script to run **interpreted** or **ahead-of-time compiled**, depending on which path you choose.
 
----
-
 ## Runtime Interaction
 
 `Program.cs` implements a **REPL** (Read–Eval–Print Loop).
@@ -121,8 +115,6 @@ AOT Script Engine - type 'exit' to quit.
 
 Internally, previously entered statements are accumulated, effectively creating a live script that persists across commands.
 
----
-
 ## Motivation
 
 This project explores a fundamental question:
@@ -130,8 +122,6 @@ This project explores a fundamental question:
 > Can we mix *interpreter simplicity* with *compiler efficiency* in a minimal C# sandbox?
 
 It provides an approachable framework for experimenting with parsing theory, dynamic compilation, and runtime reflection — using only standard .NET libraries.
-
----
 
 ## Status
 
